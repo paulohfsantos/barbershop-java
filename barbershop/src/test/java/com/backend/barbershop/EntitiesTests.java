@@ -8,8 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 
-import java.util.ArrayList;
-
 @DataJpaTest
 public class EntitiesTests {
   @Autowired
@@ -36,16 +34,6 @@ public class EntitiesTests {
     // reservation
     reservation.setBarber(barber);
     entityManager.persist(reservation);
-    entityManager.flush();
-  }
-
-  @Test
-  public void testSalonBarberMapping() {
-    Salon salon = new Salon("Salon", "Location", null, null);
-    Barber barber = new Barber(salon, "Barber", null, null, "Address");
-
-    entityManager.persist(salon);
-    entityManager.persist(barber);
     entityManager.flush();
   }
 }

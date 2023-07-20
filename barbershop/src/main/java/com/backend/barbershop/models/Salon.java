@@ -58,6 +58,10 @@ public class Salon {
     return location;
   }
 
+  public List<Reservation> getReservations() {
+    return reservations;
+  }
+
   // Setters
   public void setId(Long id) {
     this.id = id;
@@ -69,5 +73,9 @@ public class Salon {
 
   public void setLocation(String location) {
     this.location = location;
+  }
+
+  public void setReservations(List<Reservation> reservations) {
+    this.reservations = reservations;
   }
 }
