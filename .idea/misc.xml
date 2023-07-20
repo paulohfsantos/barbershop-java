@@ -4,6 +4,8 @@
     <writeAnnotations>
       <writeAnnotation name="javax.persistence.JoinColumn" />
       <writeAnnotation name="javax.persistence.Column" />
+      <writeAnnotation name="com.fasterxml.jackson.annotation.JsonManagedReference" />
+      <writeAnnotation name="org.springframework.beans.factory.annotation.Autowired" />
     </writeAnnotations>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
