@@ -62,6 +62,10 @@ public class Salon {
     return reservations;
   }
 
+  public List<Barber> getBarbers() {
+    return barbers;
+  }
+
   // Setters
   public void setId(Long id) {
     this.id = id;
@@ -77,5 +81,9 @@ public class Salon {
 
   public void setReservations(List<Reservation> reservations) {
     this.reservations = reservations;
+  }
+
+  public void setBarbers(List<Barber> barbers) {
+    this.barbers = barbers;
   }
 }
